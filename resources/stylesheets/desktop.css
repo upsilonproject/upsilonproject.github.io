@@ -1,15 +1,19 @@
 body {
-	background-color: #efefef;
+	background-color: var(--color-bg);
 }
 
 div#content {
-	background-color: white;
+	background-color: var(--color-surface);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-md);
+	border: 1px solid var(--color-border);
 }
 
 div#headerText {
 	max-width: 1024px;
 	margin: auto;
 	text-align: center;
+	padding: 0.75rem 1rem;
 }
 
 div#headerText > * {
@@ -17,15 +21,24 @@ div#headerText > * {
 }
 
 div#torso {
-	max-width: 1024px; 
-	margin: auto;
+	max-width: 1024px;
+	margin: 2rem auto 3rem;
+	padding: 0 1.25rem;
 }
 
 ul.topmenu {
 	margin-left: 1em;
 }
 
+div#footer {
+	max-width: 1024px;
+	margin: 0 auto;
+	border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
 table.serviceCheck {
 	max-width: 30%;
 	float: right;
+	border-radius: var(--radius-md);
+	overflow: hidden;
 }

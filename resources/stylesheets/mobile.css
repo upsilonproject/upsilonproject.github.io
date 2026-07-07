@@ -4,12 +4,12 @@ ul.navigation {
 
 label.mobileOnly {
 	display: block;
-	background-color: gray;
+	background-color: transparent;
 	cursor: pointer;
 }
 
 input[type="checkbox"]:checked ~ label {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.12);
 }
 
 input[type="checkbox"]:checked ~ label:after {
@@ -24,9 +24,12 @@ input[type="checkbox"]:checked ~ ul {
 	display: block;
 	z-index: 999;
 	position: absolute;
-	right: 0px;
+	right: 0;
 	left: 1em;
 	top: 3em;
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow-lg);
+	overflow: hidden;
 }
 
 ul.submenu {
@@ -35,7 +38,7 @@ ul.submenu {
 }
 
 ul.navigation {
-	background-color: gray;
+	background-color: var(--color-header);
 }
 
 ul.topmenu > li {
@@ -60,15 +63,31 @@ div.searchContainer {
 }
 
 div.line {
-	background-color: #444;
-	height: .4em;
-	margin: .3em;
+	background-color: #f8fafc;
+	height: 2px;
+	margin: 5px 8px;
+	border-radius: 2px;
+	transition: background-color var(--transition);
 }
 
 div.logo {
-	padding-Left: 4.5em;
+	padding-left: 4.5em;
+}
+
+div#content {
+	padding: 1.5rem 1.25rem;
+	border-radius: var(--radius-md);
+}
+
+div#torso {
+	margin: 1.25rem auto 2rem;
+	padding: 0 0.75rem;
+}
+
+div#splash {
+	padding: 2.25rem 1rem 2.75rem;
 }
 
 div#pictureViewer p {
-	width: 98%
+	width: 98%;
 }

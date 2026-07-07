@@ -2,9 +2,9 @@
 title: Community
 ---
 
-### Chat on Gitter
+### Community discussion
 
-We have a [Upsilon Project chat on Gitter](https://gitter.im/upsilonproject/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
+Join the conversation on [technowax.net](https://technowax.net).
 
 ### Source Code, Issues, Roadmap
 
